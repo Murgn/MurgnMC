@@ -2,6 +2,18 @@
     font-family: Minecraft-Regular;
     src: url(Assets/Fonts/Minecraft-Regular.otf);
   }
+@font-face {
+    font-family: Minecraft-Italic;
+    src: url(Assets/Fonts/Minecraft-Italic.otf);
+  }
+@font-face {
+    font-family: Minecraft-Bold;
+    src: url(Assets/Fonts/Minecraft-Bold.otf);
+  }
+  @font-face {
+    font-family: Minecraft-BoldItalic;
+    src: url(Assets/Fonts/Minecraft-BoldItalic.otf);
+  }
 
 .murgn-dark{
     background-color:#1A1A1D !important;
@@ -27,6 +39,16 @@
 }
 .murgn-text-highlight {
     color:#C3073F !important;
+}
+
+.murgn-italic{
+    font-family: Minecraft-Italic !important;
+}
+.murgn-bold{
+    font-family: Minecraft-Bold !important;
+}
+.murgn-bolditalic{
+    font-family: Minecraft-BoldItalic !important;
 }
 
 .rip_jumbotron{
