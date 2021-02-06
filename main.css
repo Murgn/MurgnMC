@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Minecraft-Regular;
+    src: url(Assets/Fonts/Minecraft-Regular.otf);
+  }
+
+.murgn-dark{
+    background-color:#1A1A1D !important;
+}
+.murgn-grey{
+    background-color:#4E4E50 !important;
+}
+.murgn-accent{
+    background-color:#950740 !important;
+}
+.murgn-highlight{
+    background-color:#C3073F !important;
+}
+
+.murgn-text-dark{
+    color:#1A1A1D!important;
+}
+.murgn-text-grey{
+    color:#4E4E50!important;
+}
+.murgn-text-accent{
+    color:#950740!important;
+}
+.murgn-text-highlight {
+    color:#C3073F !important;
+}
+
+.rip_jumbotron{
+    background-image: url(Assets/Background.png);
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Minecraft-Regular;
+    color:white;
+}
+
+
+.centertext{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
