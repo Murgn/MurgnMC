@@ -15,11 +15,13 @@
     src: url(Assets/Fonts/Minecraft-BoldItalic.otf);
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .murgn-dark{
     background-color:#1A1A1D !important;
 }
 .murgn-grey{
-    background-color:#4E4E50 !important;
+    background-color:#4e4e50 !important;
 }
 .murgn-accent{
     background-color:#950740 !important;
@@ -41,24 +43,27 @@
     color:#C3073F !important;
 }
 
-.murgn-italic{
+.minecraft-regular{
+    font-family: Minecraft-Regular !important;
+}
+.minecraft-italic{
     font-family: Minecraft-Italic !important;
 }
-.murgn-bold{
+.minecraft-bold{
     font-family: Minecraft-Bold !important;
 }
-.murgn-bolditalic{
+.minecraft-bolditalic{
     font-family: Minecraft-BoldItalic !important;
 }
 
-.rip_jumbotron{
-    background-image: url(Assets/Background.png);
+.jumbotron{
+    background-color:#1A1A1D !important;
     height: 500px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Minecraft-Regular;
     color:white;
+    width: 100%
 }
 
 
@@ -70,3 +75,34 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+.customtable{
+
+    background-color:white;
+    width:50%;
+    margin: auto;
+    margin-top: 20px
+}
+
+tr a:link
+{
+    color:#C3073F !important;
+    text-decoration:none;
+}
+
+tr a:visited
+{
+    color:#C3073F !important;
+    text-decoration:none;
+}
+
+tr a:hover
+{
+    color:#950740 !important;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color: white !important
+}
+
