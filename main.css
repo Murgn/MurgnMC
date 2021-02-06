@@ -57,7 +57,6 @@
 }
 
 .jumbotron{
-    background-color:#1A1A1D !important;
     height: 500px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -77,11 +76,10 @@
 }
 
 .customtable{
-
-    background-color:white;
     width:50%;
     margin: auto;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 20px
 }
 
 tr a:link
