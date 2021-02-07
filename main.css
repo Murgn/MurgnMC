@@ -36,11 +36,26 @@
 .murgn-text-grey{
     color:#4E4E50!important;
 }
+.murgn-text-white{
+    color:white!important;
+}
 .murgn-text-accent{
     color:#950740!important;
 }
 .murgn-text-highlight {
     color:#C3073F !important;
+}
+
+.murgn-btn{
+    border-color: #C3073F;
+    border-radius: 0px;
+    border-width: 2px;
+    color: #C3073F;
+    margin: 5px;
+}
+
+.murgn-btn:hover{
+    color:white;
 }
 
 .minecraft-regular{
@@ -94,19 +109,18 @@
 .footer{
 
     color: white;
-    height: 400px;
+    height: 150px;
     padding: 150px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .footer a:link, a:visited{
-    color:white;
+    color:#4e4e50;
     text-decoration:none;
 }
 .footer a:hover{
-    color:#4e4e50;
-    text-decoration:underline;
+    color: white;
 }
 
 tr a:link
