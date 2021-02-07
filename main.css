@@ -79,8 +79,10 @@
 
 
 .customtable{
-    width:50%;
+    width:75%;
+    height: 450px;
     margin: auto;
+    vertical-align: middle;
 }
 
 .mainpage{
