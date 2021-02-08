@@ -6,6 +6,7 @@ const makeNewError = (errorlist, errormsg) => {
     ele.setAttribute("role", "alert");
     ele.innerHTML = `<strong>${errormsg}</strong>\n<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
     errorlist.appendChild(ele);
+    document.querySelector("#msguuid").innerHTML =""
 };
 console.log(Date.now())
 document.querySelector("#usernameForm").addEventListener("submit", e => {
@@ -14,7 +15,7 @@ document.querySelector("#usernameForm").addEventListener("submit", e => {
     document.querySelector("#msguuid").innerHTML = `The UUID for ${uname} is: <code>loading...</code>`
     // you dont need submit button, i just tested it
     // https://cors-anywhere.herokuapp.com/
-    fetch(`https://api.mojang.com/users/profiles/minecraft/${uname}`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.mojang.com/users/profiles/minecraft/${uname}`)
     .then((res) => {
         if(res.status != 200) {
             return {
