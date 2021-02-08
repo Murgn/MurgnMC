@@ -54,6 +54,38 @@
     margin: 5px;
 }
 
+.murgn-btn-search {
+    border-color: #C3073F;
+    border-radius: 15px;
+    border-left: none;
+    border-width: 2px;
+    color: #C3073F;
+}
+
+.usernameInput {
+    border-color: #C3073F;
+    border-radius: 15px;
+    border-right: none;
+    border-width: 2px;  
+    /* color: #C3073F; */
+    background-color: #1A1A1D;
+    color: #4E4E50;
+}
+
+::placeholder {
+    color: #4E4E50 !important; /*  murgn you forgot !important */
+    opacity: 1 !important;
+}
+
+.usernameInput:focus {
+    color: white;
+}
+
+.usernameInput:focus {
+    
+    background-color: transparent;
+}
+
 .murgn-btn:hover{
     color:white;
 }

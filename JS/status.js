@@ -1,5 +1,3 @@
-var afterdata;
-
 fetch('https://status.mojang.com/check')
   .then((response) => {
     return response.json()
