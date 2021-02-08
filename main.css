@@ -69,11 +69,11 @@
     border-width: 2px;  
     /* color: #C3073F; */
     background-color: #1A1A1D;
-    color: #4E4E50;
+    color: #4E4E50; 
 }
 
 ::placeholder {
-    color: #4E4E50 !important; /*  murgn you forgot !important */
+    color: #4E4E50 !important;
     opacity: 1 !important;
 }
 
@@ -88,6 +88,12 @@
 
 .murgn-btn:hover{
     color:white;
+}
+
+.murgn-alert{
+    border-color: #C3073F;
+    border-radius: 0px;
+    border-width: 2px;
 }
 
 .minecraft-regular{
@@ -177,3 +183,7 @@ nav a:hover{
     color: white !important
 }
 
+code{
+    color:#C3073F;
+    font-family: Minecraft-Regular;
+}

@@ -2,7 +2,7 @@ fetch('https://status.mojang.com/check')
   .then((response) => {
     return response.json()
   })
-  .then((data) => {
+  .then((data) => { // there is a more efficient way to do this, dm me if you want to know how :)
     document.getElementById('status1img').src  = imagestatuscheck(data[0]["minecraft.net"]);
     document.getElementById('status2img').src  = imagestatuscheck(data[1]["session.minecraft.net"]);
     document.getElementById('status3img').src  = imagestatuscheck(data[2]["account.mojang.com"]);
