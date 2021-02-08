@@ -7,13 +7,14 @@ const makeNewError = (errorlist, errormsg) => {
     ele.innerHTML = `<strong>${errormsg}</strong>\n<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
     errorlist.appendChild(ele);
 };
-const timestamp = Date.now();
-console.log(timestamp)
+console.log(Date.now())
 document.querySelector("#usernameForm").addEventListener("submit", e => {
     e.preventDefault();
     let uname = e.target.usernameInput.value;
+    document.querySelector("#msguuid").innerHTML = `The UUID for ${uname} is: <code>loading...</code>`
     // you dont need submit button, i just tested it
-    fetch(`https://api.mojang.com/users/profiles/minecraft/${uname}?at${timestamp}`)
+    // https://cors-anywhere.herokuapp.com/
+    fetch(`https://api.mojang.com/users/profiles/minecraft/${uname}`)
     .then((res) => {
         if(res.status != 200) {
             return {
@@ -35,5 +36,6 @@ document.querySelector("#usernameForm").addEventListener("submit", e => {
     })
     .catch((err) => {
         makeNewError(document.querySelector("#errors"), "An Error Occured");
+        console.log(err)
       });
 });
